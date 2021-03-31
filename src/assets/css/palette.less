@@ -1,0 +1,142 @@
+// 左侧工具栏位置
+.custom-palette {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  box-sizing: border-box;
+  width: 15%;
+  height: 100%;
+  padding: 0 10px;
+  overflow: auto;
+  background-color:#0B111E ;
+  *{
+    box-sizing: border-box;
+  }
+  .group{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+  }
+  .groupLabel {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #0B111E;
+    cursor: pointer;
+    color: white;
+    display: flex;
+
+    span {
+      display: inline-block;
+      width: calc(100% - 20px);
+      line-height: 30px;
+      overflow: hidden;
+      text-align: left;
+      margin-left: 3px;
+      font-family: Arial, Bold;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      user-select: none;
+    }
+
+    i {
+      font-style: normal;
+      font-weight: bold;
+      vertical-align: super;
+      margin-top: 7px;
+    }
+  }
+
+  // 所有元素
+  .entry:hover{
+    color: #FFFFFF!important;
+  }
+  .entry {
+    width: 100%;
+    height: 30px!important;
+    line-height: 30px!important;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #00FBC4;
+    &.inShape {
+      //border: 2px solid #36bbf6;
+      //background-color: #72d3ff;
+    }
+
+    &.customShape {
+      //border: 2px solid #4483ec;
+      //background-color: #a2c5fd;
+    }
+    img{
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-top: 6px;
+    }
+    span{
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      margin-left: 3px;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #FFFFFF;
+    }
+    i{
+      color: #409eff;
+    }
+  }
+
+  // 开始事件
+  .custom-icon-start-event-none {
+    //border: 2px solid #1cc315;
+    //background-color: #45e25c;
+    //border-radius: 50%;
+  }
+
+  // 结束事件
+  .custom-icon-end-event-none {
+    //border: 2px solid#de2626;
+    //background-color: #ff7373;
+    //border-radius: 50%;
+  }
+
+  // 任务 Task
+  .custom-icon-task {
+    //border-radius: 10px;
+    //width: 60px;
+    //height: 40px;
+  }
+
+  // 网关
+  .custom-icon-gateway-none {
+    //width: 36px;
+    //height: 36px;
+    //transform: rotate(45deg);
+  }
+
+  // 数据对象
+  .custom-icon-data-object {
+    //height: 60px;
+    //width: 40px;
+  }
+
+  .customtask {
+    //border-radius: 10px;
+    width: 100%;
+    //height: 40px;
+  }
+  .entry:hover{
+    color: #36A7C4;
+    span{
+      color: #323437;
+    }
+  }
+}

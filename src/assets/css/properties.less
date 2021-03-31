@@ -1,0 +1,115 @@
+.custom-properties-panel {
+  width:30%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow: auto;
+  background-color: #F1F1F1;
+  border-color: rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  padding: 10px;
+  box-sizing: border-box;
+  >div{
+    width: 100%;
+  }
+}
+.empty {
+  width: 310px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  font-weight: 700;
+
+}
+.element-item {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  display: flex;
+  &:nth-child(2n){
+    background-color: #E1E1E1;
+  }
+  .element-id{
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  >span{
+    display: inline-block;
+    width: 65%;
+    height: 30px;
+    line-height: 30px;
+
+  }
+  label{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    width: 35%;
+    height: 30px;
+    line-height: 30px;
+  }
+  >.el-input{
+    width: 65%;
+    height: 30px !important;
+    line-height: 30px;
+    .el-input__inner{
+      height: 30px!important;
+      line-height: 30px;
+    }
+  }
+  >.el-select{
+    width: 65%;
+    height: 30px !important;
+    line-height: 30px;
+    .el-input{
+      width: 100%;
+      height: 30px !important;
+      line-height: 30px;
+      .el-input__inner{
+        height: 30px!important;
+        line-height: 30px;
+      }
+       i{
+         height: 30px!important;
+         line-height: 30px;
+       }
+
+    }
+  }
+}
+.element-item:first-child {
+  margin-top: 0;
+}
+.custom-properties-panel input,
+.custom-properties-panel textarea {
+  padding: 4px 11px;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  transition: all 0.3s;
+  outline: none;
+}
+.custom-properties-panel input:focus,
+.custom-properties-panel button:focus,
+.custom-properties-panel textarea:focus,
+.custom-properties-panel [contenteditable]:focus {
+  border-color: rgb(239, 112, 96);
+  box-shadow: 0 0 1px 2px rgba(239, 112, 96, 0.2);
+}
+.custom-properties-panel label {
+  font-weight: bold;
+}
+
+.custom-properties-panel label:after {
+  content: ': ';
+}
+
+.custom-properties-panel button + button {
+  margin-left: 10px;
+}
